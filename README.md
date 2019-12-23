@@ -9,13 +9,11 @@ Website: https://jhowewowe.github.io/Hello-World-Hack-2020/
 ## TODO:
 Important:
 - <b>ESSENTIAL</b>: Sign up form must be implemented on the website with click of a button
-- Implementation of basic image slideshow should be replaced with Bootstrap's Carousel
-- FAQ section:
-  - Columns should be changed to "col-sm-4" instead of "col-4" for responsiveness
 - Sponsors section:
   - Display list of sponsors
 
 If time allows:
+- Sticky Navigation bar?
 - About Section:
   - Description can be more catchy, engaging for about Hello World Hack
 - FAQ Section:
