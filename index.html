@@ -30,7 +30,10 @@
       <a class="navbar-brand" href="#"></a>
         <img id="hello-world-hack-logo" src="./src/img/logos/hello-world-hack-logo.svg"
         width="60" height="60"></img>
-        <header id="header-text">HelloWorldHack</header>
+        <!-- NOTE: Currently testing this feature- Header text could be animated (text by text) -->
+        <div class="typewriter">
+          <header id="header-text">HelloWorldHack</header>
+        </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,6 +52,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#faq-hello-world-hack-text">FAQ</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors-header-text">Sponsors</a>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SIGN UP NOW</a>
           </li>
@@ -92,11 +97,15 @@
     <section class="about-hello-world-hack">
       <div class="row-text">
         <h2 id="about-hello-world-hack-text">So What is Hello World Hack?</h2>
-        <h3>If you've never attended a hackathon, or have just picked up programming <br> and want to get a project
+        <h3>If you've never attended a hackathon, or recently picked up programming <br> and want to get a project
           off the ground, this is the perfect hackathon for you!<br>
           The Hello World Hackathon is a hackathon created for beginners.<br>
           Filled with workshops on setting up a project, building it, and testing it.<br>
-          Awesome prizes and food galore! The best part, it's all <b>free!</b></h3>
+          Awesome prizes and food galore! The best part, it's completely <b>FREE!</b><br>
+          So what are you waiting for?</h3>
+          <div class="row">
+            <a href="#" class="button1">Sign Up Here!</a>
+          </div>
       </div>
     </section>
 
@@ -138,7 +147,7 @@
           </div>
           <div class="col-sm-4">
             <h3>What should I bring?</h3>
-            <h4>Preferably a laptop</h4>
+            <h4>Preferably a laptop and brains</h4>
           </div>
           <div class="col-sm-4">
             <h3>Is food provided?</h3>
@@ -146,19 +155,38 @@
           </div>
           <div class="col-sm-4">
             <h3>How are we judged?</h3>
-            <h4>How delightful!</h4>
+            <h4>More details to come</h4>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sponsors-hello-world-hack">
-			<div class="row-text">
-				<h2 id="sponsors-header-text">Sponsors</h2>
-				<h3><b>Your majesty shall release thy list in mid January 2020!</b><br>
-        Note: Company logos will be initially black but when hovered it will have a colorful effect<br>
-        "This event would not have been possible without the following sponsors: "</h3>
-			</div>
+      <div class="container-fluid">
+  			<div class="row">
+  				<h2 id="sponsors-header-text">Sponsors</h2>
+        </div>
+          <div class="sponsors-layout">
+            <!-- NOTE: For future developments of the website, create extra divisions within the logos for more customizations within images-->
+            <div class="sponsors-logos">
+              <a href="https://www.amazon.com/" target="_blank">
+                <img src="./src/img/logos/amazon-logo.svg" alt="Amazon Logo">
+              </a>
+              <a href="https://www.accenture.com/" target="_blank">
+                <img src="./src/img/logos/accenture-logo.png" alt="Accenture Logo">
+              </a>
+              <a href="https://www.bloomberg.com/" target="_blank">
+                <img src="./src/img/logos/Bloomberg-logo.png" alt="Bloomberg Logo">
+              </a>
+              <a href="https://www.quantumblack.com/" target="_blank">
+                <img src="./src/img/logos/quantumblack-logo.jpg" alt="QuantumBlack Logo">
+              </a>
+              <a href="https://www.cgg.com/en" target="_blank">
+                <img src="./src/img/logos/CGG-logo.png" alt="CGG Logo">
+              </a>
+            </div>
+          </div>
+  			</div>
 		</section>
 
     <footer class="contact-details-hello-world-hack">
@@ -175,6 +203,8 @@
               <img src="./src/img/icons/facebook-icon.png" alt="Facebook Icon" width="64px" height="64px" class="img-rounded"></a>
               <a href="https://www.linkedin.com/company/hello-world-hackathon/" target="_blank">
               <img src="./src/img/icons/LinkedIn-icon.jpg" alt="LinkedIn Icon" width="64px" height="64px" class="img-rounded"></a>
+              <a href="https://twitter.com/HelloWorldHack/" target="_blank">
+              <img src="./src/img/icons/twitter-icon.png" alt="Twitter Icon" width="64px" height="64px" class="img-rounded"></a>
             </div>
             <h4>&copy 2019-2020 <a href="https:www.justhowe.com/" target="_blank">Justin Howe</a><br>
                 Graphic Design and Images provided by Ryan Schuller</h4>

@@ -20,6 +20,26 @@ body {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
+/**HelloWorldHack animated header - feature influenced by CSS Tricks **/
+.typewriter header {
+  overflow: hidden; /* Text hidden until animation starts */
+  border-right: .05em solid black; /* Cursor */
+  white-space: nowrap; /* Retains text content all on 1 line */
+  margin: 0 auto; /* Creates scroll effect */
+  animation:
+    typing 5s steps(40,end), /* Determines length of animation and frames needed to complete animation */
+    blinkTextCursor 0.75s step-end infinite; /* The cursor keeps blinking even after animation */
+}
+/* Type effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blinkTextCursor {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
 
 /**About HelloWorldHack:**/
 .about-hello-world-hack {
@@ -32,7 +52,7 @@ body {
   color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
 }
@@ -47,6 +67,24 @@ body {
 .about-hello-world-hack, .organizers-hello-world-hack, .faq-hello-world-hack {
   padding: 16px 0;
 }
+a.button1 {
+  display: block;
+  border: 0.16em solid #FFFFFF;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  font-family: 'Raleway',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.4em 1.2em;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 1.6;
+}
+a.button1:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+}
 
 /** Organizers of Hello World Hack **/
 .organizers-hello-world-hack figcaption {
@@ -58,7 +96,7 @@ body {
 #organizers-hello-world-hack-text, #faq-hello-world-hack-text, #sponsors-header-text, #contact-details {
   font-weight: bold;
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
 }
@@ -92,13 +130,39 @@ body {
 .sponsors-hello-world-hack {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
+  align-items: center;
+  line-height: 1.6;
+}
+.sponsors-hello-world-hack .row {
+  display: flex;
+  justify-content: center;
 }
 .sponsors-hello-world-hack h3 {
   font-size: 16px;
   text-align: center;
   font-family: 'Raleway', Tahoma, sans-serif;
   line-height: 1.6;
+}
+.sponsors-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 0 2px 0 2px;
+}
+.sponsors-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsors-logos img {
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  padding: 32px 0;
 }
 
 
@@ -107,7 +171,7 @@ body {
   display: flex;
   justify-content: center;
 	line-height: 1.6;
-	padding: 0;
+	padding: 16px 0;
 	font-family: 'Raleway', Tahoma, sans-serif;
 }
 
