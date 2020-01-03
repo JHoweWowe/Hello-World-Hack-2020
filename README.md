@@ -9,13 +9,10 @@ Website: https://jhowewowe.github.io/Hello-World-Hack-2020/
 ## TODO:
 Important:
 - <b>ESSENTIAL</b>: Sign up form must be implemented on the website with click of a button
-- FAQ Section:
-  - More Q/As should be implemented
+- Implement Sign Up Sheet for mentors on website (When ready)
 
 If time allows:
 - Sticky Navigation bar?
-- About Section:
-  - Description can be more catchy, engaging for about Hello World Hack
 - FAQ Section:
   - Questions will appear by default, but answers will be hidden <br>
     When questions are clicked, the answers will then appear
