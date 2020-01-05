@@ -1,6 +1,9 @@
 
+/** Unsure why there is an overflow-x for mobile/tablet devices-
+future versions could suppose fix the bug somewhere else in code **/
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   text-align: center;
@@ -14,14 +17,15 @@ body {
 #header-text {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 #navigationList {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
-/**HelloWorldHack animated header - feature influenced by CSS Tricks **/
+
+/**HelloWorldHack animated header - feature influenced by CSSTricks website **/
 .typewriter header {
   overflow: hidden; /* Text hidden until animation starts */
   border-right: .05em solid black; /* Cursor */
@@ -49,6 +53,19 @@ body {
   background-color: #202379;
   padding: 16px 0;
 }
+/** Implementing repsonsive text which captures full-screen when screen is below/at 992px
+    large common breakpoints for responsiveness  **/
+.about-hello-world-hack .row-text {
+  width: 70vw;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .about-hello-world-hack .row-text {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 .about-hello-world-hack h2 {
   color: white;
   font-weight: bold;
@@ -68,15 +85,24 @@ body {
 .about-hello-world-hack h4 {
   color: white;
   padding: 0px 64px;
+  padding-top: 16px;
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
+  line-height: 1.6;
+  font-family: 'Oswald', sans-serif;
+}
+.about-hello-world-hack h5 {
+  color: white;
+  padding: 0px 64px;
+  text-align: center;
+  font-size: 24px;
   line-height: 1.6;
   font-family: 'Oswald', sans-serif;
 }
 .about-hello-world-hack, .organizers-hello-world-hack, .faq-hello-world-hack {
   padding: 16px 0;
 }
-.about-hello-world-hack .row {
+.about-hello-world-hack .row, .mentors-hello-world-hack .row {
   padding: 8px 0px;
 }
 a.button1 {
@@ -96,6 +122,49 @@ a.button1:hover {
   color:#000000;
   background-color:#FFFFFF;
 }
+a.button2 {
+  display: block;
+  border: 0.16em solid black;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  font-family: 'Raleway',sans-serif;
+  color: black;
+  text-align: center;
+  padding: 0.4em 1.2em;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.6;
+}
+a.button2:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
+/** Section for Hello World Hack mentors **/
+.mentors-hello-world-hack {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+/** Implementing repsonsive text which captures full-screen when screen is below/at 992px
+     this is ideal for large common breakpoints  **/
+.mentors-hello-world-hack .container-fluid {
+  width: 70vw;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .mentors-hello-world-hack .container-fluid {
+    width: 100vw;
+    height: auto;
+  }
+}
+.mentors-hello-world-hack h3 {
+  padding: 0px 64px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+}
 
 /** Organizers of Hello World Hack **/
 .organizers-hello-world-hack figcaption {
@@ -104,7 +173,7 @@ a.button1:hover {
   font-family: 'Raleway', sans-serif;
 }
 
-#organizers-hello-world-hack-text, #faq-hello-world-hack-text, #sponsors-header-text, #contact-details {
+#mentors-hello-world-hack-text, #organizers-hello-world-hack-text, #faq-hello-world-hack-text, #sponsors-header-text, #contact-details {
   font-weight: bold;
   text-align: center;
   font-size: 64px;
@@ -116,6 +185,7 @@ a.button1:hover {
 }
 
 /**HelloWorldHack FAQ:**/
+/** Note: secondary background-color can be #960FFF **/
 .faq-hello-world-hack {
   background-color: orange;
 }
@@ -167,7 +237,7 @@ a.button1:hover {
   flex-wrap: wrap;
 }
 .sponsors-logos-gold img {
-  width: 75vw;
+  width: 70vw;
   height: auto;
   justify-content: center;
   padding: 32px 0; }
@@ -242,5 +312,5 @@ a.button1:hover {
 }
 
 /**
-  * Extra CSS Code for the CarouselImageSlideShow
+  * Extra CSS Code for the CarouselImageSlideShow - if needed
  **/
