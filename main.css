@@ -1,6 +1,5 @@
 
-/** Unsure why there is an overflow-x for mobile/tablet devices-
-future versions could suppose fix the bug somewhere else in code **/
+/** Future versions should have the website more mobile responsive **/
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -58,8 +57,9 @@ body {
 .about-hello-world-hack .row-text {
   width: 70vw;
   height: auto;
+  padding: 0 15px;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about-hello-world-hack .row-text {
     width: 100vw;
     height: auto;
@@ -71,12 +71,11 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 64px;
-  line-height: 1.6;
+  line-height: 1.35;
   font-family: 'Oswald', sans-serif;
 }
 .about-hello-world-hack h3 {
   color: white;
-  padding: 0px 64px;
   text-align: center;
   font-size: 24px;
   line-height: 1.6;
@@ -84,16 +83,14 @@ body {
 }
 .about-hello-world-hack h4 {
   color: white;
-  padding: 0px 64px;
   padding-top: 16px;
   text-align: center;
   font-size: 64px;
-  line-height: 1.6;
+  line-height: 1.35;
   font-family: 'Oswald', sans-serif;
 }
 .about-hello-world-hack h5 {
   color: white;
-  padding: 0px 64px;
   text-align: center;
   font-size: 24px;
   line-height: 1.6;
@@ -151,15 +148,15 @@ a.button2:hover {
 .mentors-hello-world-hack .container-fluid {
   width: 70vw;
   height: auto;
+  padding: 0px 15px;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .mentors-hello-world-hack .container-fluid {
     width: 100vw;
     height: auto;
   }
 }
 .mentors-hello-world-hack h3 {
-  padding: 0px 64px;
   text-align: center;
   font-size: 24px;
   line-height: 1.6;
@@ -177,7 +174,7 @@ a.button2:hover {
   font-weight: bold;
   text-align: center;
   font-size: 64px;
-  line-height: 1.6;
+  line-height: 1.35;
   font-family: 'Oswald', sans-serif;
 }
 #faq-hello-world-hack-text {
@@ -211,6 +208,7 @@ a.button2:hover {
   justify-content: center;
   align-items: center;
   line-height: 1.6;
+  padding-top: 16px;
 }
 .sponsors-hello-world-hack .row {
   display: flex;
