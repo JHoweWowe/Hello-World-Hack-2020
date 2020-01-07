@@ -15,9 +15,6 @@ If time allows:
 - FAQ Section:
   - Questions will appear by default, but answers will be hidden <br>
     When questions are clicked, the answers will then appear
-- Contact Us Section:
-  - Initially social media logo will be black and white color<br>
-    However when hovered, it should transition into the picture showing colour
 ## References:
 Hello World Hack 2019: https://hello-world-hack.github.io/Landing/
 ## Authors:

@@ -102,7 +102,7 @@ body {
 .about-hello-world-hack .row, .mentors-hello-world-hack .row {
   padding: 8px 0px;
 }
-a.button1 {
+a.button1, a.button2 {
   display: block;
   border: 0.16em solid #FFFFFF;
   border-radius: 0.12em;
@@ -115,24 +115,7 @@ a.button1 {
   font-size: 24px;
   line-height: 1.6;
 }
-a.button1:hover {
-  color:#000000;
-  background-color:#FFFFFF;
-}
-a.button2 {
-  display: block;
-  border: 0.16em solid black;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  font-family: 'Raleway',sans-serif;
-  color: black;
-  text-align: center;
-  padding: 0.4em 1.2em;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: 1.6;
-}
-a.button2:hover {
+a.button1:hover, a.button2:hover {
   color:#000000;
   background-color:#FFFFFF;
 }
@@ -142,7 +125,12 @@ a.button2:hover {
   display: flex;
   justify-content: center;
   padding: 16px 0;
+  background-color: #9A0EFF;
 }
+.mentors-hello-world-hack h2 {
+  color: #FFFFFF;
+}
+
 /** Implementing repsonsive text which captures full-screen when screen is below/at 992px
      this is ideal for large common breakpoints  **/
 .mentors-hello-world-hack .container-fluid {
@@ -161,9 +149,16 @@ a.button2:hover {
   font-size: 24px;
   line-height: 1.6;
   font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
 }
 
 /** Organizers of Hello World Hack **/
+@media screen and (max-width: 576px) {
+  .organizers-hello-world-hack .col-sm-6 {
+    text-align: center;
+  }
+}
+
 .organizers-hello-world-hack figcaption {
   line-height: 1.6;
   font-size: 16px;
@@ -299,7 +294,16 @@ a.button2:hover {
   justify-content: center;
   margin: 0 auto;
 	padding: 0 2px 0;
+  -webkit-filter: grayscale(1); /** Used for older Internet clients **/
+  filter: grayscale(1);  /** Ensures social media images are grayscale initially **/
+  transition-property: filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
+.contact-details-hello-world-hack img:hover {
+  filter: grayscale(0);
+}
+
 .contact-details-hello-world-hack .social-media-links {
   justify-content: center;
   text-align: center;
