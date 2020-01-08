@@ -4,7 +4,8 @@ Website for U of Edinburgh's Hello World Hackathon 2020
 As requested by the Programming Society.<br>
 Pages include Home, About, Becoming a Mentor, Organizers, FAQ, Sponsors and Contact Details.
 
-Website: https://jhowewowe.github.io/Hello-World-Hack-2020/
+Official Website: https://helloworldhack.com [Officially released on 8 January 2020]
+Website setup using GitHub Pages: https://jhowewowe.github.io/Hello-World-Hack-2020/
 ## TODO:
 Important:
 - Mostly covered unless extra features are later requested
